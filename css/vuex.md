@@ -14,19 +14,19 @@
 # 安装
 1. 利用npm包管理工具，进行安装 vuex。在控制命令行中输入下边的命令就可以了。
 
-~~~
+~~~ javascript
 npm install vuex --save
 ~~~
 ###### *需要注意的是这里一定要加上 –save，因为你这个包我们在生产环境中是要使用的。
 #
 2. 新建一个vuex文件夹（这个不是必须的），并在文件夹下新建store.js文件，文件中引入我们的vue和vuex。
-~~~
+~~~ javascript
 import Vue from 'vue';
 import Vuex from 'vuex';
 ~~~
 
 3. 使用我们vuex，引入之后用Vue.use进行引用。
-~~~
+~~~ javascript
 Vue.use(Vuex);
 ~~~
 ###### 通过这三步的操作，vuex就算引用成功了
@@ -184,7 +184,3 @@ methods:{
 引入
 import { mapState, mapMutations, mapGetters, mapActions } from 'vuex'
 ~~~
-
-
-
-# 谢谢各位

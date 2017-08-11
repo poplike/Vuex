@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+
 Vue.use(Vuex)
 
 const state = { // 状态值
@@ -21,7 +22,9 @@ const getters = { // 过滤
 const actions = { // 异步调用
     fn(context) {
         setTimeout(() => {
-            context.state.num = 50;
+            context.commit('add');
+            let newNum = context.state.num;
+            console.log(newNum);
         }, 3000);
         console.log('走你')
     }
